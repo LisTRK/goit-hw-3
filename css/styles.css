@@ -339,18 +339,13 @@ button {
     background: #2e2f42;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 156px;
 }
 
 .footer-container {
     /*
     margin: 100px auto 100px 156px;
     */
-    display: block;
-    width: 264px;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    
     
 }
 
@@ -371,5 +366,10 @@ button {
 .logo-studio {color: #f4f4fd;}
 
 .footer-text {
+    display: block;
+    width: 264px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     color: #f4f4fd;
 }
