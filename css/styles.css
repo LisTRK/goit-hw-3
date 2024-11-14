@@ -1,9 +1,6 @@
 /* #region Base */
 
-::after,
-::before {
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: "Roboto", sans-serif;
@@ -57,7 +54,7 @@ button {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
-    m
+    
 }
 /* #end region base */
 
@@ -69,6 +66,7 @@ button {
 .header-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
