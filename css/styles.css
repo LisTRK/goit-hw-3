@@ -1,4 +1,5 @@
-/* #region Base */
+/*#region shared styles */
+
 
 
 
@@ -8,16 +9,22 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-        
+    font-style: normal;
+    text-decoration: none;
     background-color: #FFFFFF;
-    color:#434455;
+    color: #434455;
 }
+/*#endregion */
 
-ul, ol {
+ul,
+ol {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
 }
+
+
+
 
 a {
     text-decoration: none;
@@ -36,6 +43,8 @@ button {
     padding: 0;
     cursor: pointer;
 }
+
+
 
 .container {
     max-width: 1158px;
@@ -63,19 +72,18 @@ button {
 }
 
 
-/* #end region base */
 
 
-/* region header */
+
 
 .header-section {
     padding: 0;
+    border-bottom: 1px solid #e7e9fc;
  }
 
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
@@ -93,12 +101,12 @@ button {
     text-transform: uppercase;
     text-decoration: none;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .header-nav-list {
     display: flex;
     gap: 40px;
-    margin-left: 76px;
 }
 
 .header-nav-item {
@@ -165,7 +173,7 @@ button {
 
 .hero-section {
     background: #2e2f42;
-    padding: 188px;
+    padding: 188px 0;
 }
 
 .hero-container {
@@ -181,11 +189,6 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    /*
-    margin-bottom: 48px;
-    margin-left: auto ;
-    margin-right: auto;
-    */
 
     margin: 0 auto 48px;
 }
@@ -217,6 +220,19 @@ button {
      
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 
 .featur-list {
@@ -236,13 +252,7 @@ button {
         color: #2e2f42;
         margin-bottom: 8px;
     }
-.team-subtitle {
-        font-weight: 500;
-        font-size: 20px;
-        letter-spacing: 0.02em;
-        line-height: 1.2;
-        color: #2e2f42;
-    }
+
 .portfolio-subtitle  {
     font-weight: 500;
     font-size: 20px;
@@ -261,8 +271,18 @@ button {
     background: #f4f4fd;
 }
 
+
+
 .team-title {
     margin-bottom: 72px;
+}
+
+.team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    color: #2e2f42;
 }
 
 .team-list {
@@ -279,22 +299,30 @@ button {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 32px;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-img {}
 
 .team-info {
-    margin: 32px 16px;
+    
     display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding: 32px 0;
 }
 
+.team-subtitle {
+    text-align: center;
+    margin-bottom: 8px;
+}
 
-
+.team-text{
+    text-align: center;
+}
 
 
 .portfolio-section {
@@ -309,7 +337,8 @@ button {
     display: flex;
     max-width: 1128px;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .portfolio-item {}
@@ -329,6 +358,9 @@ button {
     padding: 32px 16px;
 }
 
+.portfolio-subtitle {
+    margin-bottom: 8px;
+}
 
 
 
@@ -342,16 +374,12 @@ button {
 }
 
 .footer-container {
-    /*
-    margin: 100px auto 100px 156px;
-    */
-    
     
 }
 
 
 .footer-logo {
-    display: block;
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
