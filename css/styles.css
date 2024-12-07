@@ -112,14 +112,13 @@ button {
 }
 
 .header-nav-item {
-    
-    
 }
 
 
-
-    .header-logo:hover, 
-    .header-logo:focus { color: #404bbf}
+.header-logo:hover, 
+.header-logo:focus { 
+    color: #404bbf
+}
 
 .logo {
     color: #2e2f42;
@@ -159,7 +158,6 @@ button {
 
 .address-link { 
     display: block;
-    padding: 24px;
     font-weight: 400;
     font-size: 16px;
     color: currentColor;
@@ -297,10 +295,6 @@ button {
 
     background-color: #FFFFFF;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
@@ -319,7 +313,6 @@ button {
 
 .team-subtitle {
     text-align: center;
-    margin-bottom: 8px;
 }
 
 .team-text{
@@ -361,7 +354,6 @@ button {
 }
 
 .portfolio-subtitle {
-    margin-bottom: 8px;
 }
 
 
